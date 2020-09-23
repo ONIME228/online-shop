@@ -1,7 +1,8 @@
 import {
     takeLatest,
     call,
-    put
+    put,
+    all
 } from 'redux-saga/effects';
 
 import {
@@ -29,4 +30,8 @@ export function* fetchColectionsAsync() {
 
 export function* fetchCollectionsStart() {
     yield takeLatest(ShopActionTypes.FETCH_COLLECTIONS_START, fetchColectionsAsync);
-} 
+}
+
+export function* shopSagas() {
+    yield all([call(fetchCollectionsStart)])
+}
