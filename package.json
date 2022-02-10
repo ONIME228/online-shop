@@ -23,7 +23,7 @@
     "express-sslify": "^1.2.0",
     "grpc": "^1.24.3",
     "node-pre-gyp": "^0.16.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "requests": "^0.3.0",
     "stripe": "6.28.0"
   },
